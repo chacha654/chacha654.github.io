@@ -1,24 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>chacha654 home</title>
-	<style>
-	body 
-	{
-		height: 100%;
-		background-image:  url("assets/sparta.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
-	}
-	h1   {color: blue;}
-	h2    {color: red;}
-	</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Alien Invader - Developer</title>
+
+  <!-- Website Icon -->
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#0b0f1a;
+      color:#e9eefc;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      padding:24px;
+    }
+    .card{
+      max-width:600px;
+      width:100%;
+      background:rgba(255,255,255,0.06);
+      border:1px solid rgba(255,255,255,0.12);
+      border-radius:16px;
+      padding:28px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.35);
+    }
+    h1{
+      margin:0 0 10px 0;
+      font-size:28px;
+      letter-spacing:0.5px;
+    }
+    p{
+      margin:0;
+      font-size:16px;
+      line-height:1.6;
+      opacity:0.9;
+    }
+    .small{
+      margin-top:14px;
+      font-size:13px;
+      opacity:0.7;
+    }
+  </style>
 </head>
+
 <body>
-<h1>chacha654</h1>
-<h2>I come I conquer</h2>
-<a href="https://www.w3schools.com">I am learning this</a>
-<p title="About W3Schools">W3Schools is a web developer's site.</p>
+  <div class="card">
+    <h1>Alien Invader</h1>
+    <p>Hello! I’m the developer of <b>Alien Invader</b>.</p>
+    <p>Thanks for playing and supporting my game!</p>
+
+    <div class="small">
+      © <span id="year"></span> Alien Invader
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
